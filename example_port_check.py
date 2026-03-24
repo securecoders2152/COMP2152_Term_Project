@@ -6,18 +6,21 @@
 #
 #  Telnet is an old protocol that sends everything in plain text
 #  — including usernames and passwords. Modern servers should
-#  NEVER have Telnet open. If port 23 is open, that's a
+#  NEVER have Telnet open. If a Telnet port is open, that's a
 #  security vulnerability.
 #
-#  This script uses socket.connect_ex() to check if port 23
+#  This script uses socket.connect_ex() to check if port 2323
 #  is open on a target. This is similar to what you built
 #  in Assignment 2 (Port Scanner).
+#
+#  NOTE: Services don't always run on their default port.
+#  Real-world scanning means checking non-standard ports too.
 # ============================================================
 
 import socket
 
 target = "telnet.0x10.cloud"
-port = 23
+port = 2323
 
 print("=" * 50)
 print("  Open Port Check (Telnet)")
