@@ -1,19 +1,23 @@
-# Name: Alia Qureshi
-# Student ID: 101535665
-# Vulnerability: HTTP instead of HTTPS
+# Author: Alia Qureshi
+# Vulnerability: Missing HTTPS Encryption
 # Target: blog.0x10.cloud
 
 import urllib.request
 
 try:
-    url = "http://blog.0x10.cloud"
-    response = urllib.request.urlopen(url)
+    response = urllib.request.urlopen("http://blog.0x10.cloud", timeout=5)
 
+    print("=== Response Info ===")
+    print("Status Code:", response.status)
+    print("Final URL:", response.url)
+
+    # Check if site is using HTTP instead of HTTPS
     if response.url.startswith("http://"):
-        print("VULNERABILITY FOUND: Site is using HTTP")
-        print("Data can be intercepted (MITM attack)")
+        print("\n[VULNERABILITY FOUND]")
+        print("This website does NOT use HTTPS.")
+        print("Data can be intercepted (man-in-the-middle attack).")
     else:
-        print("Secure HTTPS")
+        print("Site is secure (HTTPS enabled).")
 
 except Exception as e:
-    print("Error:", e) 
+    print("Error occurred:", e) 

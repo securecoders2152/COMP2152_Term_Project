@@ -1,19 +1,21 @@
-# Name: Alia Qureshi
-# Student ID: 101535665
-# Vulnerability: Missing Security Headers
+# Author: Member Name
+# Vulnerability: Server Info Disclosure
 # Target: api.0x10.cloud
 
 import urllib.request
 
 try:
-    response = urllib.request.urlopen("http://api.0x10.cloud")
+    response = urllib.request.urlopen("http://api.0x10.cloud", timeout=5)
     headers = dict(response.headers)
 
-    if "X-Frame-Options" not in headers:
-        print("VULNERABILITY FOUND: Missing X-Frame-Options header")
-        print("This allows clickjacking attacks")
-    else:
-        print("Header exists")
+    print("=== Headers ===")
+    for key, value in headers.items():
+        print(f"{key}: {value}")
+
+    if "Server" in headers:
+        print("\n[VULNERABILITY FOUND]")
+        print("Server version is exposed:", headers["Server"])
+        print("Attackers can use this info to exploit known vulnerabilities.")
 
 except Exception as e:
     print("Error:", e) 
