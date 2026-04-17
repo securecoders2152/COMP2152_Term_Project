@@ -1,26 +1,26 @@
-# Name: Alia Qureshi
-# Student ID: 101535665
+# Author: Alia Qureshi
 # Vulnerability: Open Telnet Port
 # Target: telnet.0x10.cloud
 
 import socket
 
-try:
-    target = "telnet.0x10.cloud"
-    port = 23 
+target = "telnet.0x10.cloud"
+port = 2323
 
+try:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(2)
+    sock.settimeout(3)
 
     result = sock.connect_ex((target, port))
 
     if result == 0:
-        print(f"VULNERABILITY FOUND: Port {port} is OPEN")
-        print("Telnet is insecure because it sends data in plain text")
+        print("[VULNERABILITY FOUND]")
+        print(f"Port {port} is OPEN on {target}")
+        print("Telnet is insecure (sends data in plain text).")
     else:
-        print("Port is closed")
+        print("Port is closed.")
 
     sock.close()
 
 except Exception as e:
-    print("Error:", e)
+    print("Error:", e) 
