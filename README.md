@@ -11,13 +11,13 @@ securecoders2152
 | Aaron Balayo (101575606) | Open Telnet Port (Port Scan) | aaron_telnet_scan |
 | Camille Yu (101568394) | HTTP instead of HTTPS | camille_http_check |
 | Enna Prudenciano (101331486) | Missing Security Headers | enna_headers |
-| Fabiha Ishaque (101535665) | Insecure HTTP Configuration | fabiha_http |
+| Fabiha Ishaque (101445115) | Insecure HTTP Configuration | fabiha_http |
 
 ## Videos
 
 - Alia: https://youtu.be/SfAlUg2tEy4?si=YVp2i9te1MeE7LRm 
 - Aaron: https://youtube.com/watch?v=________
-- Camille: https://youtube.com/watch?v=________
+- Camille: https://youtu.be/A2-gkCTeq-Q?feature=shared 
 - Enna: https://youtube.com/watch?v=________
 - Fabiha: https://youtube.com/watch?v=________
 
