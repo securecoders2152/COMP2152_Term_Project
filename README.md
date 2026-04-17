@@ -15,7 +15,7 @@ securecoders2152
 
 ## Videos
 
-- Alia: https://youtube.com/watch?v=________
+- Alia: https://youtu.be/SfAlUg2tEy4?si=pCNe7Ldp4XpY0bHi
 - Aaron: https://youtu.be/1B-A6YrDxn4
 - Camille: https://youtube.com/watch?v=________
 - Enna: https://youtube.com/watch?v=________
