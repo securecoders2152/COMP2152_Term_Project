@@ -11,7 +11,7 @@ securecoders2152
 | Aaron Balayo (101575606) | Open Telnet Port (Port Scan) | aaron_telnet_scan |
 | Camille Yu (101568394) | CDN server headers check | camille_cdn_headers_check |
 | Enna Prudenciano (101331486) | Missing Security Headers | enna_headers |
-| Fabiha Ishaque (101535665) | Insecure HTTP Configuration | fabiha_http |
+| Fabiha Ishaque (101445115) | Insecure HTTP Configuration | fabiha_http |
 
 ## Videos
 
