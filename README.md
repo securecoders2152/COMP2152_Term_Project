@@ -9,16 +9,16 @@ securecoders2152
 |--------|-------------------|-------------|
 | Alia Qureshi (101535665) | Missing Security Headers / HTTP / Port Scan | alia_vulnerabilities |
 | Aaron Balayo (101575606) | Open Telnet Port (Port Scan) | aaron_telnet_scan |
-| Camille Yu (101568394) | HTTP instead of HTTPS | camille_http_check |
+| Camille Yu (101568394) | CDN server headers check | camille_cdn_headers_check |
 | Enna Prudenciano (101331486) | Missing Security Headers | enna_headers |
 | Fabiha Ishaque (101535665) | Insecure HTTP Configuration | fabiha_http |
 
 ## Videos
 
-- Alia: https://youtube.com/watch?v=________
-- Aaron: https://youtube.com/watch?v=________
-- Camille: https://youtube.com/watch?v=________
-- Enna: https://youtube.com/watch?v=________
+- Alia: https://youtu.be/SfAlUg2tEy4?si=YVp2i9te1MeE7LRm
+- Aaron: https://youtu.be/1B-A6YrDxn4
+- Camille: https://youtu.be/A2-gkCTeq-Q?feature=shared
+- Enna: https://youtu.be/CyXZu69RL0M
 - Fabiha: https://youtube.com/watch?v=________
 
 ## Target
